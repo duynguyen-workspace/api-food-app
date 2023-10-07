@@ -4,7 +4,7 @@ import express from "express";
 import { getLikeRestaurant, getLikeRestaurantByUser, getLikeRestaurantByRes, addLikeRestaurant, deleteLikeRestaurant, getRateRestaurant, getRateRestaurantByRes, getRateRestaurantByUser, addRateRestaurant } from "../controllers/restaurantController.js";
 const restaurantRoute = express.Router()
 
-//* like_res api
+//* like_res GET API
 restaurantRoute.get("/getLikeRes", getLikeRestaurant)
 restaurantRoute.get("/getLikeResByUser/:userID", getLikeRestaurantByUser)
 restaurantRoute.get("/getLikeResByRes/:resID", getLikeRestaurantByRes)
